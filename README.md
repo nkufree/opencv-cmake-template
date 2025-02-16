@@ -21,7 +21,7 @@ git clone https://github.com/nkufree/opencv-cmake-template.git
 修改根目录中的CMakeLists.txt文件，将OpenCV的安装目录中的`build`文件夹设置为`OpenCV_DIR`变量的值，如：
 
 ```cmake
-SET(OpenCV_DIR "E:/software/opencv/build")
+set(OpenCV_DIR "E:/software/opencv/build")
 ```
 
 然后将可执行程序加入环境变量，在OpenCV的4.10.0版本中，该路径为：
