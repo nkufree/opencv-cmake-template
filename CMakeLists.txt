@@ -47,7 +47,7 @@ add_subdirectory(deps)
 
 ## 添加OpenCV库
 ### TODO: 请根据实际情况修改OpenCV的路径
-SET(OpenCV_DIR "E:/software/opencv/build")
+set(OpenCV_DIR "E:/software/opencv/build")
 find_package(OpenCV CONFIG REQUIRED)
 ### 打印OpenCV的相关信息
 message(STATUS "OpenCV_INCLUDE_DIRS: ${OpenCV_INCLUDE_DIRS}")
