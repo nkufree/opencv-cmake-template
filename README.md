@@ -8,6 +8,8 @@
 - Eigen
 - Googletest
 
+如果只需要使用OpenCV，可以切换到分支`opencv-only`。
+
 ## 如何使用
 
 确保电脑上已经安装Visual Studio 2019或更高版本。
