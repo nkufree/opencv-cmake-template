@@ -34,4 +34,4 @@ set(OpenCV_DIR "E:/software/opencv/build")
 
 ![1](./assets/1.png)
 
-之后使用Visual Studio或者VSCode打开均可，具体的使用方式可以参考其他教程。
+之后使用Visual Studio或者VSCode打开均可，VSCode需要安装插件CMake Tools和CMake，具体的使用方式可以参考其他教程。
