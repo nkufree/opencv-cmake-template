@@ -1,6 +1,6 @@
 ## 添加所有需要编译的文件目录
 ### TODO: 将所有的文件夹添加在下一行括号内即可，用空格分隔
-set(SUB_DIRS common unit_test example)
+set(SUB_DIRS common example)
 foreach(dir ${SUB_DIRS})
     include_directories(${dir}/include)
 endforeach()

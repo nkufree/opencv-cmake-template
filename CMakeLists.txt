@@ -40,8 +40,6 @@ endif()
 enable_testing()
 
 ## 添加第三方依赖
-### 在添加gtest之前，先解决gtest的编译问题
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 ### 部分使用Cmake构建的第三方库可以放在deps文件夹下，所以在这里添加这个文件夹作为子目录
 add_subdirectory(deps)
 
@@ -52,11 +50,6 @@ find_package(OpenCV CONFIG REQUIRED)
 ### 打印OpenCV的相关信息
 message(STATUS "OpenCV_INCLUDE_DIRS: ${OpenCV_INCLUDE_DIRS}")
 include_directories(${OpenCV_INCLUDE_DIRS})
-## 下面两个库位于deps文件夹下
-### eigen使用模板编写，在这里只通过头文件引入
-include_directories (${CMAKE_CURRENT_SOURCE_DIR}/deps/eigen-3.4.0)
-## googletest
-find_package(GTest CONFIG QUIET)
 
 ## 解决中文乱码问题
 ### 设置MSVC编译器的源代码字符集为UTF-8

@@ -19,22 +19,3 @@ void test_img()
     cv::destroyAllWindows();
     cv::imwrite("test.png", img);
 }
-
-void test_eigen()
-{
-    Eigen::Matrix3d mat1, mat2;
-    mat1 << 1, 2, 3, 4, 5, 6, 7, 8, 9;
-    mat2 << 9, 8, 7, 6, 5, 4, 3, 2, 1;
-    Eigen::Matrix3d mat = mat1 * mat2;
-    std::cout << mat << std::endl;
-}
-
-Eigen::Matrix3d eigen_add(Eigen::Matrix3d a, Eigen::Matrix3d b)
-{
-    return a + b;
-}
-
-Eigen::Matrix3d eigen_sub(Eigen::Matrix3d a, Eigen::Matrix3d b)
-{
-    return a - b;
-}

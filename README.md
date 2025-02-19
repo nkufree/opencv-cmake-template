@@ -2,11 +2,9 @@
 
 ## 简介
 
-这是一个在Windows系统上使用CMake构建OpenCV项目的模板项目，包含以下三个第三方库：
+这是一个在Windows系统上使用CMake构建OpenCV项目的模板项目，只包含以下一个第三方库：
 
 - OpenCV
-- Eigen
-- Googletest
 
 ## 如何使用
 
